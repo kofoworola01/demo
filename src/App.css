@@ -1,8 +1,87 @@
-.App {
-  text-align: center;
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+  width: 166px;
+  justify-content: space-between;
+  align-items: center;
+}
+.time {
+  background-color: #F3F5F6;
+  height: 23px;
+  padding: 8px 12px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.b {
+  margin-left: 74px;
+} 
+.check-in {
+  display: flex;
 }
 
-.Card {
+@media screen and (min-width: 500px) {
+  .separator {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .check-in  {
+    background-color: #F3F5F6;
+    align-items: center;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .b {
+    margin-left: 0px;
+  }
+
+  .separator {
+    width: 14.5px;
+    background-color: black;
+    height: 1px;
+  }
+}
+
+
+/* .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activity-wrapper {
+  width: fit-content;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  width: 50px;
+  height: auto;
+}
+.user-info {
+  padding: 0 26px;
+} */
+
+/* .Card {
   width: 327px;
   height: fit-content;
   background-color: red;
@@ -25,7 +104,6 @@ p {
   margin: 0;
   text-align: left;
 }
-/*  */
 
 .EnterText {
   display: flex;
@@ -37,4 +115,4 @@ p {
   width: 100%;
   height: 2px;
   background-color: gray;
-}
+}  */
